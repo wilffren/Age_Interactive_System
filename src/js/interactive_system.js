@@ -1,21 +1,21 @@
-function validation(){
+let btnValidation = document.getElementById("btn-validation")
+let result = document.getElementById("result")
 
-const name = document.getElementById("name").value
-const age = document.getElementById("age").value
-const btnValidation = document.getElementById("btn-validation")
+btnValidation.addEventListener("click", function () {
+    let name = document.getElementById("name").value
+    let age = document.getElementById("age").value
 
-const result = document.getElementById("result").innerHTML = btnValidation
-
-
-let message
+    let message
 
 
-if (isNaN(age)){
-    message = "Error: Please enter a valid age in numbers"
-}else if (age < 18){
-    message = "Hello " + name + ", You're a minor. Keep learning and enjoying coding!"
-}else{
-    message = "Hello " + name + ", You're of legal age. Get ready for great opportunities in the world of programming!"
-}
+    if (isNaN(age)) {
+        message = "Error: Please enter a valid age in numbers"
+    } else if (age < 18) {
+        message = "Hello " + name + ", You're a minor. Keep learning and enjoying coding!"
+    } else {
+        message = "Hello " + name + ", You're of legal age. Get ready for great opportunities in the world of programming!"
+    }
 
-}
+})
+
+

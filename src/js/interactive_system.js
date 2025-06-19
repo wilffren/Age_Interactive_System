@@ -8,7 +8,7 @@ btnValidation.addEventListener("click", function () {
     let message
 
 
-    if (isNaN(age)) {
+    if (isNaN(age) || age <= 0) {
         message = "Error: Please enter a valid age in numbers"
     } else if (age < 18) {
         message = "Hello " + name + ", You're a minor. Keep learning and enjoying coding!"
@@ -16,6 +16,7 @@ btnValidation.addEventListener("click", function () {
         message = "Hello " + name + ", You're of legal age. Get ready for great opportunities in the world of programming!"
     }
 
+    result.textContent = message
 })
 
 

@@ -13,8 +13,10 @@ This web application, developed with HTML, CSS, and JavaScript, validates a user
 
 ## Tecnologies
 Html 5 and CSS 3 for the structure.
+
 Javascript for the logic.
 
 ## Author
 Wilffren Efrain Muñoz Velasquez
+
 Coder by clan Ciénaga
